@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Home Page of Jansen Properties</title>
-  <meta name="description" content="Welcome to Jansen Properties">
+  <title>Home Page of Rental Properties</title>
+  <meta name="description" content="Welcome to Rental Properties">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/81eae48fcf.js" crossorigin="anonymous"></script>
-  </head>
+</head>
   <body id="home">
     <!-- Navbar -->
     <nav id="navbar">
       <h1 class="logo"><span class="text-primary">
-        <i class="fas fa-city"></i>Jansen</span> Properties
+        <i class="fas fa-city"></i>Rental</span> Properties
       </h1>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="holidayrentals.html">Rentals</a></li>
-        <li><a href="contact_page.html">Contact</a></li>
+        <li>Rentals <i class="fas fa-angle-down"></i>
+          <ul>
+            <li><a href="holidayrentals.html">Holiday Rentals</a></li>
+            <li><a href="#">Short-term Rentals</a></li>
+            <li><a href="#">Long-term Rental</a></li>
+          </ul>
+        </li>
+        <li><a href="contact_page.html">Contact</a>
       </ul>
     </nav>
     <!-- Header Showcase-->
@@ -32,7 +40,7 @@
     <!--Section : What we do-->
     <section id="what" class="bg-light py-1">
       <div class="container">
-        <h2 class="m-heading text-center"><span class="text-primary">What</span> We Do</h2>
+        <h2 class="m-heading text-center">What We Do</h2>
         <div class="items">
           <div class="item">
             <i class="fas fa-sun fa-5x"></i>
@@ -58,13 +66,37 @@
         </div>
       </div>
     </section>
-
     <script src="" async defer></script>
+    <section id="feature">
+      <h2 class="m-heading text-center">Western Cape Views</h2>
+      <div class="flex-photos">
+        <div>
+          <img src="img\IMG_9130.JPG" alt="">
+        </div>
+        <div>
+          <img src="img\IMG_9132.JPG" alt="">
+        </div>
+        <div>
+          <img src="img\IMG_9145.JPG" alt="">
+        </div>
+      </div>
+      <div class="flex-photos">
+        <div>
+          <img src="img\IMG_9154.JPG" alt="">
+        </div>
+        <div>
+          <img src="img\IMG_9211.JPG" alt="">
+        </div>
+        <div>
+          <img src="img\IMG_9246.JPG" alt="">
+        </div>
+      </div>
+    </section>
   </body>
   <!-- Footer -->
   <footer id="main-footer" class="bg-dark text-center py-1">
     <div class="container">
-      <p>Copyright &copy; 2020, JansenProperties, All Rights Reserved</p>
+      <p>Copyright &copy; 2020, Melanie Molifie, All Rights Reserved</p>
     </div>
   </footer>
   <!-- JQuery CDN -->
