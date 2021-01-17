@@ -4,10 +4,13 @@
   margin:0;
   padding: 0;
 }
+
 :root {
-  --primary-color: coral;
-  --secondary-color: chocolate;
+  --title-color: white;
+  --primary-color: #677F98;
+  --secondary-color: #679898;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
@@ -21,7 +24,6 @@ p {
   margin: 0.75rem 0;
 }
 
-
 /* Utility Classes */
 .container {
   max-width: 1100px;
@@ -31,7 +33,7 @@ p {
 }
 
 .text-primary {
-  color: #07f7ff;
+  color: #fff;
 }
 
 .text-center {
@@ -69,14 +71,6 @@ p {
   background: aquamarine;
   color: #fff;
 }
-.btn {
-  display: inline-block;
-  color: #fff;
-  background: aquamarine;
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 5px;
-}
 
 .btn:hover {
   background: aqua;
@@ -93,14 +87,11 @@ p {
 
 .p-2 { padding: 2rem; }
 
-
 /* Navigation Bar */
 #navbar {
   display: block;
-  /**background: rgb(80, 79, 79);**/
-  background: rgb(80, 79, 79);
+  background: var(--primary-color);
   color: rgb(255, 255, 255);
-  /* justify-content: space-between; */
   padding: 16px;
   top: 0;
   position: sticky;
@@ -108,9 +99,6 @@ p {
 }
 
 #navbar ul {
-  /* display: inline-block;
-  justify-content: right;
-  align-items: center; */
   list-style: none;
 }
 
@@ -120,10 +108,12 @@ p {
   padding: 1rem;
   position: relative;
 }
+
 #navbar ul li a {
   color: #e7e7e7;
   text-decoration: none;
 }
+
 /* Hide nested ul by default */
 #navbar ul li ul {
   display: none;
@@ -138,6 +128,7 @@ p {
  #navbar ul li:hover a {
   color:#fff;
 }
+
 /* Nested dropdown show */
 #navbar ul li:hover ul {
   display: block;
@@ -145,25 +136,32 @@ p {
   left: 0;
   width: 200px;
   margin-top: 1rem;
+  background: #fff;
 }
+
 #navbar ul li:hover ul li {
   display: block;
-  background: #e7e7e7;
+  background: #fff;
 }
 
 #navbar ul li:hover ul li a {
-  color: #e7e7e7;
+  color: #cebebe;
+  /* color: #476b6b; */
+}
+
+#navbar ul li:hover ul li a:hover {
+  color: #fff;
 }
 
 #navbar ul li:hover ul li:hover {
-  background: #e0e0e0;
-  color: inherit;
+  background: var(--secondary-color);
+  color: #fff;
 }
 
-#navbar ul li:hover ul li span {
+/* #navbar ul li:hover ul li span {
   float: right;
   color: #fff;
-  background: var(--primary-color);
+  background: #fff;
   padding: 0.2rem 0.5rem;
   text-align: center;
   font-size: 0.8rem;
@@ -171,77 +169,11 @@ p {
 }
 
 #navbar ul li:hover ul li:hover span {
-  background: var(--secondary-color);
-}
-/* Hide nested ul by default */
-/* #navbar ul li:hover {
-  cursor: pointer;
-  background: var(--primary-color);
-  color: rgb(201, 41, 41);
-  border-radius: 2px;
+  background: #fff;
 } */
-/* #navbar ul li a:hover {
-  background: coral;
-  color: black;
-  border-radius: 5px;
-} */
-#navbar ul li:hover a {
-  color: rgb(255, 255, 255);
-}
 
 #navbar li ul{
   display: none;
-}
-#navbar ul li ul {
-  display: none;
-}
-
-#navbar ul li:hover {
-  cursor: pointer;
-  background: var(--primary-color);
-  color: #fff;
-}
-
-/* #navbar ul li:hover a {
-  color: #fff;
-} */
-/* Show nested dropdown */
-#navbar ul li:hover ul {
-
-  float: left;
-  overflow: hidden;
-  display: block;
-   /* position: absolute; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
-  left: 0;
-  align-content: center;
-  text-align: justify;
-  right: auto;
-  width: 221px;
-  margin-top: 0.8rem;  */
-}
-
-#navbar ul li:hover ul li {
-  display: block;
-  background: #e7e7e7;
-
-  /* justify-content: right; */
-    /* align-items: center; */
- /*  list-style: none; */
-}
-
-#navbar ul li:hover ul li a {
-  color: #333;
-  cursor: pointer;
-
-}
-
-#navbar ul li:hover ul li:hover {
-  background: coral;
-  color: inherit;
 }
 
 /* Showcase */
@@ -289,15 +221,13 @@ p {
 /*  I want to add a border line??*/
   margin-bottom: 1rem;
 }
+
 /* Feature */
 #feature .flex-photos{
   display: flex;
   padding: 8px;
   flex-direction: row;
   align-items: center;
-  /* flex-wrap: wrap; */
-
-  /* flex: 1; */
 }
 
 #feature img{

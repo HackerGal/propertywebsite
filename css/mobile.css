@@ -21,21 +21,23 @@
 /* Smartphones */
 @media(max-width: 500px) {
   #navbar {
-    flex-direction: column;
+    /* flex-direction: column; */
+    text-align: center;
     align-items: center;
   }
 
   #navbar .logo {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     text-align: center;
   }
 
   #navbar ul {
-    padding: 0.5rem;
+    /* padding: 0; */
   }
 
   #showcase .showcase-content {
-    top: 110px;
+    top: 150px;
+    /* height: 100%; */
   }
 
   /* #who {
