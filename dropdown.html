@@ -9,16 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/styletest.css"> -->
   <script src="https://kit.fontawesome.com/81eae48fcf.js" crossorigin="anonymous"></script>
   <style>
-    #navbar {
-      /*overflow: hidden;
-      background-color: #333;*/
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
       font-family: Arial, Helvetica, sans-serif;
     }
     
-    #navbar a{
+    .navbar a {
       float: right;
       font-size: 16px;
       color: white;
@@ -26,12 +26,9 @@
       padding: 14px 16px;
       text-decoration: none;
     }
-    .logo {
-      text-align: center;
-      
-    }
+    
     .dropdown {
-      float: left;
+      float: right;
       overflow: hidden;
     }
     
@@ -47,7 +44,7 @@
       margin: 0;
     }
     
-    #navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
       background-color: red;
     }
     
@@ -57,45 +54,50 @@
       background-color: #f9f9f9;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
+      z-index: 1;  
     }
     
     .dropdown-content a {
-      float: none;
+      float:none;
       color: black;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
-      text-align: left;
+      text-align:left;
     }
     
     .dropdown-content a:hover {
       background-color: #ddd;
     }
+    
     .show {
-      display: block;
+      display:block;
+      
     }
-    </style>
+  </style>
 </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar">
-      <h1 class="logo"><span class="text-primary">
+    <nav>
+      <!-- <h1 class="logo"><span class="text-primary">
         <i class="fas fa-city"></i>Jansen</span> Properties
-      </h1>
-      <a href="#home">Home</a>
-      <a href="#news">About</a>
-      <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">Rentals
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="#">Long-Term Rentals</a>
-        <a href="#">Short-term Rentals</a>
-        <a href="#">Holiday Rentals</a>
+      </h1> -->
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+        <a class="dropbtn" onclick="myFunction()">Rental
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div> 
       </div>
-      </div> 
     </nav>
+
     <!-- Header Showcase-->
     <header id="showcase">
       <div class="showcase-content">
@@ -121,12 +123,14 @@
       }
     </script>
   </body>
+
   <!-- Footer -->
   <footer id="main-footer" class="bg-dark text-center py-1">
     <div class="container">
       <p>Copyright &copy; 2020, JansenProperties, All Rights Reserved</p>
     </div>
   </footer>
+
   <!-- JQuery CDN -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
