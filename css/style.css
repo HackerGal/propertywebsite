@@ -63,7 +63,7 @@ p {
 }
 
 .bg-dark {
-  background: rgb(80, 79, 79);
+  background: var(--primary-color);
   color: white;
 }
 
@@ -158,20 +158,6 @@ p {
   color: #fff;
 }
 
-/* #navbar ul li:hover ul li span {
-  float: right;
-  color: #fff;
-  background: #fff;
-  padding: 0.2rem 0.5rem;
-  text-align: center;
-  font-size: 0.8rem;
-  border-radius: 5px;
-}
-
-#navbar ul li:hover ul li:hover span {
-  background: #fff;
-} */
-
 #navbar li ul{
   display: none;
 }
@@ -233,7 +219,19 @@ p {
 #feature img{
   width: 100%;
 }
+/* FOOTER */
+/* Add a hover effect if you want */
+.fab:hover {
+  opacity: 0.7;
+}
 
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fab {
+  background:var(--primary-color);
+  color: white;
+}
 /* Section: Contact */
 #contact  {
   display: flex;
