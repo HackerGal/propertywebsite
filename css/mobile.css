@@ -6,7 +6,7 @@
 
 /* Align icon to left */
 #what .items .item {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   flex-direction: row;
 }
@@ -33,17 +33,18 @@
 
   #navbar ul {
     /* padding: 0; */
+
   }
 
   #showcase .showcase-content {
     top: 150px;
     /* height: 100%; */
   }
-
-  /* #who {
+ /* 
+#who {
     display: block;
   }
-
+ 
   #who .who-img {
     display: none;
   } */

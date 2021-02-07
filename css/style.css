@@ -73,13 +73,19 @@ p {
 }
 
 .btn:hover {
-  background: aqua;
+  background: var(--secondary-color);
+  color: white
 }
 
 .btn-dark {
   background: #333;
   color: #fff;
 }
+/* .btn-light {
+  background: #fff;
+  color: #333;
+
+} */
 
 .py-1 {
   padding: 1.5rem 0;
