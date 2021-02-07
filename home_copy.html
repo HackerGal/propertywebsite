@@ -69,7 +69,7 @@
     <script src="" async defer></script>
     <section id="feature">
       <h2 class="m-heading text-center">Western Cape Views</h2>
-      <div class="flex-photos">
+      <!-- <div class="flex-photos">
         <div>
           <img src="img\IMG_9130.JPG" alt="">
         </div>
@@ -90,7 +90,104 @@
         <div>
           <img src="img\IMG_9246.JPG" alt="">
         </div>
+      </div> -->
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+          <img src="img\IMG_9130.JPG" alt="Melanie Molifie photos"
+          onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img\IMG_9132.JPG" alt="Melanie Molifie photos"
+          onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img\IMG_9145.JPG" alt="Melanie Molifie photos3"
+          onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img\IMG_9154.JPG" alt="Melanie Molifie photos4"
+          onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img\IMG_9211.JPG" alt="Melanie Molifie photos5"
+          onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img\IMG_9246.JPG" alt="Melanie Molifie photos6"
+          onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
       </div>
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="img\IMG_9130.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="img\IMG_9132.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="img\IMG_9145.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="img\IMG_9154.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="img\IMG_9211.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="img\IMG_9246.JPG" style="width:100%">
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="img\IMG_9130.JPG" onclick="currentSlide(1)" alt="Strip mall">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img\IMG_9132.JPG" onclick="currentSlide(2)" alt="Plant shop">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img\IMG_9145.JPG" onclick="currentSlide(3)" alt="Road sign">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img\IMG_9154.JPG" onclick="currentSlide(4)" alt="Antique store">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img\IMG_9211.JPG" onclick="currentSlide(5)" alt="Farm hay">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img\IMG_9246.JPG" onclick="currentSlide(6)" alt="Old bungee bridge">
+        </div>
+
+      </div>
+    </div>      
     </section>
   </body>
   <!-- Footer -->
