@@ -282,6 +282,17 @@ p {
   cursor: pointer;
 }
 
+/* Login Page display */
+.modal-header, h4, .close{
+  background-color: var(--primary-color);
+  color:white !important;
+  text-align: center;
+  font-size: 30px;
+}
+.modal-footer {
+  background-color: var(--primary-color);
+}
+
 /* Hide the slides by default */
 .mySlides {
   display: none;
