@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Log in</title>
+  <meta name="description" content="Welcome to Rental Properties">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" href="css/style.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <h1 class="logo">
+      <i class="fas fa-city"></i>  Rental Properties
+    </h1>
+    <ul>
+      <li><a href="mainpage.html">Home</a></li>
+      <li>Rentals <i class="fas fa-angle-down"></i>
+        <ul>
+          <li><a href="holidayrentals.html">Holiday Rentals</a></li>
+          <li><a href="#">Short-term Rentals</a></li>
+          <li><a href="#">Long-term Rental</a></li>
+        </ul>
+      </li>
+      <li><a href="contact_page.html">Contact</a>
+      <li class="nav navbar-nav navbar-right"><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-user" id="myBtn" ></span> Sign Up</a></li>
+      <li class="nav navbar-nav navbar-right"><a data-toggle="modal" href="login.html" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="padding:35px 50px;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+          </div>
+          <div class="modal-body" style="padding:40px 50px;">
+            <form  method="POST" role="form">
+              <!-- {% csrf_token %} -->
+              <div class="form-group">
+                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter password">
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="" checked>Remember me</label>
+              </div>
+                <button type="submit" class="btn btn-default btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+            <p>Not a member? <a href="/register" target="blank">Sign Up</a></p>
+            <p>Forgot <a href="#">Password?</a></p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <br><br><br><br>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2020, Melanie Molifie, All Rights Reserved</p>
+      <a href="#" class="fab fa-facebook fa-2x"></a>
+      <a href="#" class="fab fa-instagram fa-2x"></a>
+      <a href="#" class="fab fa-github fa-2x"></a>
+    </div>
+  </footer>
+
+  <!-- Local JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

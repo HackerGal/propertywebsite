@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 * {
   box-sizing: border-box;
   margin:0;
@@ -7,12 +8,13 @@
 
 :root {
   --title-color: white;
-  --primary-color: #677F98;
-  --secondary-color: #679898;
+  --primary-color: #626464;
+  --secondary-color: coral;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.4;
 }
 
@@ -68,7 +70,7 @@ p {
 }
 
 .bg-primary {
-  background: aquamarine;
+  background: coral;
   color: #fff;
 }
 
@@ -95,17 +97,22 @@ p {
 
 /* Navigation Bar */
 #navbar {
-  display: block;
+  display: flex;
   background: var(--primary-color);
   color: rgb(255, 255, 255);
-  padding: 16px;
+  padding: 1rem;
   top: 0;
   position: sticky;
   z-index: 1;
+  justify-content: space-between;
+  border: coral;
+  border-bottom-style: solid;
 }
 
 #navbar ul {
+  display: flex;
   list-style: none;
+  align-items: center;
 }
 
 #navbar ul li {
@@ -118,6 +125,8 @@ p {
 #navbar ul li a {
   color: #e7e7e7;
   text-decoration: none;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
 }
 
 /* Hide nested ul by default */
@@ -151,7 +160,7 @@ p {
 }
 
 #navbar ul li:hover ul li a {
-  color: #cebebe;
+  color: #888787;
   /* color: #476b6b; */
 }
 
@@ -170,9 +179,11 @@ p {
 
 /* Showcase */
 #showcase {
-  background: #333 url('../img/pexels-mathias-pr-reding-4389550.jpg') no-repeat center center/cover;
+  background:  url('../img/pexels-johannes-plenio-1103970.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
+  /* border: coral;
+  border-bottom-style: solid; */
 }
 
 #showcase .showcase-content {
@@ -189,7 +200,7 @@ p {
   left:0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.4);
+  /* background-color: rgba(0,0,0,0.4); */
 }
 
 /* Section: What We Do */
