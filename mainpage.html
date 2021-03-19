@@ -10,7 +10,7 @@
   <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
@@ -38,8 +38,9 @@
     <!-- Header Showcase-->
     <header id="showcase">
       <div class="showcase-content">
-        <h1 class="l-heading">Property solutions at your fingertips</h1>
+        <h1 class="l-heading">J | Rental Properties</h1>
         <p class="lead">See anything you like?</p>
+        <a href="contact_page.html"><button class="button">Contact Us</button></a>
       </div>
     </header>
     <!--Section : Rental We Offer-->
@@ -48,24 +49,24 @@
         <h2 class="m-heading text-center">What We Do</h2>
         <div class="items">
           <div class="item">
-            <i class="fas fa-sun fa-5x"></i>
+            <a href="holidayrentals.html"><i class="fas fa-sun fa-5x"></i></a>
             <div>
-              <h3>Holiday Rentals</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!</p>
+              <a href="holidayrentals.html"><h3>Holiday Rentals</h3></a>
+              <p>Enjoy some time away at our holiday house.</p>
             </div>
           </div>
           <div class="item">
-            <i class="fas fa-user-graduate fa-5x"></i>
+            <a href="langeberghouse.html"><i class="fas fa-user-graduate fa-5x"></i></a>
               <div>
-                <h3>Student Rentals</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!</p>
+                <a href="langeberghouse.html"><h3>Student Rentals</h3></a>
+                <p>We offer safe and affordable student rentals.</p>
               </div>
           </div>
           <div class="item">
-            <i class="fas fa-building fa-5x"></i>
+            <a href="holidayrentals.html"><i class="fas fa-building fa-5x"></i></a>
             <div>
-              <h3>Long-Term Rentals</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!</p>
+              <a href="holidayrentals.html"><h3>Long-Term Rentals</h3></a>
+              <p>Rent out an apartment for a minimum of one year.</p>
             </div>
           </div>
         </div>
@@ -73,104 +74,68 @@
     </section>
     <script src="" async defer></script>
     <section id="feature">
-      <h2 class="m-heading text-center">Western Cape Views</h2>
-      <!-- Images used to open the lightbox -->
-      <div class="row">
-        <div class="column">
-          <img src="img\Malmesbury.jpeg" alt="Melanie Molifie photos"
-          onclick="openModal();currentSlide(1)" class="hover-shadow">
-        </div>
-        <div class="column">
-          <img src="img\Bellville-South\WhatsApp Image 2021-03-06 at 4.47.33 PM (1).jpeg" alt="Melanie Molifie photos"
-          onclick="openModal();currentSlide(2)" class="hover-shadow">
-        </div>
-        <div class="column">
-          <img src="img\Langebaan\WhatsApp Image 2021-03-06 at 4.48.36 PM.jpeg" alt="Melanie Molifie photos3"
-          onclick="openModal();currentSlide(3)" class="hover-shadow">
-        </div>
-        <!-- <div class="column">
-          <img src="img\IMG_9154.JPG" alt="Melanie Molifie photos4"
-          onclick="openModal();currentSlide(4)" class="hover-shadow">
-        </div>
-        <div class="column">
-          <img src="img\IMG_9211.JPG" alt="Melanie Molifie photos5"
-          onclick="openModal();currentSlide(5)" class="hover-shadow">
-        </div>
-        <div class="column">
-          <img src="img\IMG_9246.JPG" alt="Melanie Molifie photos6"
-          onclick="openModal();currentSlide(6)" class="hover-shadow">
-        </div> -->
-      </div>
-    <!-- The Modal/Lightbox -->
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-
+      <!-- <h2 class="m-heading text-center">Some of our Properties</h2> -->
+      <!-- Container for the image gallery-->
+      <!-- <div class="container">
         <div class="mySlides">
-          <div class="numbertext">1 / 3</div>
-          <img src="img\IMG_9130.JPG" style="width:100%">
+          <div class="numbertext">1 / 6</div>
+          <img src="img\Bellville-South\WhatsApp Image 2021-03-06 at 4.47.32 PM (1).jpeg" style="width:100%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 6</div>
-          <img src="img\IMG_9132.JPG" style="width:100%">
+          <img src="img\Langebaan\WhatsApp Image 2021-03-06 at 4.48.36 PM.jpeg" style="width:100%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 6</div>
-          <img src="img\IMG_9145.JPG" style="width:100%">
-        </div>
-
-        <!-- <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="img\IMG_9154.JPG" style="width:100%">
+          <img src="img\Langebaan\WhatsApp Image 2021-03-06 at 4.48.38 PM.jpeg" style="width:100%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 6</div>
-          <img src="img\IMG_9211.JPG" style="width:100%">
+          <img src="img\Malmesbury.jpeg" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="img\IMG_9246.JPG" style="width:100%">
-        </div> -->
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="numbertext">5 / 6</div>
+          <img src="img\Langebaan\WhatsApp Image 2021-03-06 at 4.48.37 PM.jpeg" style="width:100%">
+        </div>
 
-        <!-- Caption text
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="img\Bellville-South\WhatsApp Image 2021-03-06 at 4.47.33 PM.jpeg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
         <div class="caption-container">
           <p id="caption"></p>
         </div>
 
-        <!-- Thumbnail image controls -->
-        <!-- <div class="column">
-          <img class="demo" src="img\IMG_9130.JPG" onclick="currentSlide(1)" alt="Strip mall">
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="img\Bellville-South\WhatsApp Image 2021-03-06 at 4.47.32 PM (1).jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img\Langebaan\WhatsApp Image 2021-03-06 at 4.48.36 PM.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img\Langebaan\WhatsApp Image 2021-03-06 at 4.48.38 PM.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img\Malmesbury.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img\Langebaan\WhatsApp Image 2021-03-06 at 4.48.37 PM.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="img\Bellville-South\WhatsApp Image 2021-03-06 at 4.47.33 PM.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+          </div>
         </div>
-
-        <div class="column">
-          <img class="demo" src="img\IMG_9132.JPG" onclick="currentSlide(2)" alt="Plant shop">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="img\IMG_9145.JPG" onclick="currentSlide(3)" alt="Road sign">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="img\IMG_9154.JPG" onclick="currentSlide(4)" alt="Antique store">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="img\IMG_9211.JPG" onclick="currentSlide(5)" alt="Farm hay">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="img\IMG_9246.JPG" onclick="currentSlide(6)" alt="Old bungee bridge">
-        </div> -->
-
       </div> -->
-    </div>      
+
     </section>
   </body>
   <!-- Footer -->

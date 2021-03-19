@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 * {
   box-sizing: border-box;
   margin:0;
@@ -13,13 +14,15 @@
 }
 
 body {
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Raleway', sans-serif;
   line-height: 1.4;
 }
 
 a {
   text-decoration: none;
+  color: var(--primary-color);
 }
 
 p {
@@ -76,7 +79,7 @@ p {
 
 .btn:hover {
   background: var(--secondary-color);
-  color: white
+  color: white;
 }
 
 .btn-dark {
@@ -179,9 +182,9 @@ p {
 
 /* Showcase */
 #showcase {
-  background:  url('../img/pexels-johannes-plenio-1103970.jpg') no-repeat center center/cover;
+  background:  url('../img/pexels-oliver-sjöström-1122413.jpg') no-repeat center center/cover;
   height: 100vh;
-  color: #fff;
+  color: #888787;
   /* border: coral;
   border-bottom-style: solid; */
 }
@@ -203,6 +206,11 @@ p {
   /* background-color: rgba(0,0,0,0.4); */
 }
 
+/* #what {
+  background:  url('../img/pexels-oliver-sjöström-1122413.jpg') no-repeat center center/cover;
+
+} */
+
 /* Section: What We Do */
 #what .items {
   display: flex;
@@ -217,16 +225,37 @@ p {
 }
 
 #what .items .item i {
-  background: #ffffff;
-  padding: 2rem;
+  /* background: #ffffff; */
+  /* padding: 2rem;
   border-radius: 50%;
-  border: solid 1px;
+  border: solid 1px; */
 /*  I want to add a border line??*/
   margin-bottom: 1rem;
 }
+.button {
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: 0.3s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  opacity: 0.6;
 
+}
+
+.button:hover {
+  background-color:rgb(255, 255, 255);
+  color: var(--primary-color);
+  opacity: 1;
+}
 /* Feature */
-#feature .flex-photos{
+/* #feature .flex-photos{
   display: flex;
   padding: 8px;
   flex-direction: row;
@@ -244,16 +273,16 @@ p {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Create four equal columns that floats next to eachother */
-.column {
+/* .column {
   float: left;
   width: 33%;
-}
+} */
 
 /* The Modal (background) */
-.modal {
+/* .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -264,20 +293,20 @@ p {
   height: 100%;
   overflow: auto;
   background-color: black;
-}
+} */
 
 /* Modal Content */
-.modal-content {
+/* .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 90%;
   max-width: 1200px;
-}
+} */
 
 /* The Close Button */
-.close {
+/* .close {
   color: white;
   position: absolute;
   top: 10px;
@@ -291,7 +320,7 @@ p {
   color: #999;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 /* Login Page display */
 .modal-header, h4, .close{
@@ -303,10 +332,20 @@ p {
 .modal-footer {
   background-color: var(--primary-color);
 }
+/* IMAGE SLIDESHOW ON MAIN PAGE */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
 
-/* Hide the slides by default */
+/* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -314,14 +353,13 @@ p {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
-  transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -348,29 +386,34 @@ p {
   top: 0;
 }
 
-/* Caption text */
+/* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: #222;
   padding: 2px 16px;
   color: white;
 }
 
-img.demo {
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
   opacity: 0.6;
 }
 
 .active,
 .demo:hover {
   opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* FOOTER */
