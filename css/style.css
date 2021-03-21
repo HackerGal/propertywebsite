@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Quicksand', sans-serif; */
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
@@ -29,12 +29,21 @@ p {
   margin: 0.75rem 0;
 }
 
+span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
 /* Utility Classes */
 .container {
-  max-width: 1100px;
+  /* display: block; */
+  max-width: 1000px;
   margin: auto;
-  padding: 0 2rem;
-  overflow: hidden;
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+  /* padding: 0 2rem;
+  overflow: hidden; */
+  /* box-shadow: 10px 10px 5px grey; */
 }
 
 .text-primary {
@@ -232,6 +241,7 @@ p {
 /*  I want to add a border line??*/
   margin-bottom: 1rem;
 }
+
 .button {
   background-color: var(--secondary-color);
   border: none;
@@ -246,7 +256,6 @@ p {
   transition-duration: 0.4s;
   cursor: pointer;
   opacity: 0.6;
-
 }
 
 .button:hover {
@@ -336,6 +345,7 @@ p {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  padding: 1px;
 }
 
 /* Hide the images by default */
@@ -355,11 +365,11 @@ p {
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -374,7 +384,7 @@ p {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: coral;
 }
 
 /* Number text (1/3 etc) */
@@ -389,7 +399,7 @@ p {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: coral;
   padding: 2px 16px;
   color: white;
 }
@@ -400,10 +410,10 @@ p {
   clear: both;
 }
 
-/* Six columns side by side */
+/* Five columns side by side */
 .column {
   float: left;
-  width: 16.66%;
+  width: 20%;
 }
 
 /* Add a transparency effect for thumbnail images */
@@ -414,6 +424,20 @@ p {
 .active,
 .demo:hover {
   opacity: 1;
+}
+/* HOLIDAY RENTAL PAGE */
+.feature-section {
+  list-style-type: none;
+  border:solid  #cac8c8 0.5px;
+  border-radius: 9px;
+  /* padding: 1px;
+  margin: 15px; */
+  box-shadow: 8px 0px 5px rgb(204, 201, 201);
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* FOOTER */
