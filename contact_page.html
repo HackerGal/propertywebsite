@@ -8,19 +8,20 @@
   <meta name="description" content="Welcome to Rental Properties">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
   <script src="https://kit.fontawesome.com/81eae48fcf.js" crossorigin="anonymous"></script>
   </head>
   <body id="holidayrentals">
     <!-- Navbar -->
     <nav id="navbar">
-      <h1 class="logo"><span class="text-primary">
-        <i class="fas fa-city"></i>  Rental</span> Properties
+      <h1 class="logo">
+          J | Rentals
       </h1>
       <ul>
         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li>Rentals <i class="fas fa-angle-down"></i>
+        <li>Rentals<i class="fas fa-angle-down"></i>
           <ul>
-            <li><a href="holidayrentals.html">Holiday Rentals</a></li>
+            <li><a href="holidayrentals">Holiday Rentals</a></li>
             <li><a href="student_rentals.html">Student Rentals</a></li>
             <li><a href="longtermrentals.html">Annual Rentals</a></li>
           </ul>
@@ -30,15 +31,15 @@
     </nav>
     <!-- Section A: Contact Form -->
     <section id="contact-a" class="text-center py-3">
-      <div class="container">
+      <div class="container-a">
         <h2 class="section-title">Contact Us</h2>
         <div class="bottom-line"></div>
         <p class="lead">We would like to hear from you.</p>
-        <form method="POST" action="process.php">
+        <form method="POST" action="contact.php">
           <div class="text-fields">
             <input type="text" class="text-input name-input" placeholder="Name" name="name"/>
             <input type="text" class="text-input subject-input" placeholder="Subject" name="subject"/>
-            <input type="email" class="text-input email-input" placeholder="Email Address" name="email"/>
+            <input type="email" class="text-input email-input" placeholder="Email Address" name="email" />
             <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
             <textarea class="text-input message-input" placeholder="Enter Message" name="message" ></textarea>
           </div>
@@ -48,7 +49,7 @@
     </section>
 
     <!-- Section B: Contact Info -->
-    <section id="contact-b" class="py-1 bg-medium">
+    <!-- <section id="contact-b" class="py-1 bg-medium">
       <div class="container">
         <div class="contact-info">
           <div>
@@ -63,7 +64,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </body>
   <!-- Footer -->
   <footer id="main-footer" class="bg-dark text-center py-1">
