@@ -17,6 +17,13 @@
   align-self: center;
   margin-bottom: 0;
 }
+.feature-section {
+  width: 100%;
+  min-width: 450px;
+  padding: 10px;
+  margin-left: 100px;
+  flex-direction: column;
+}
 
 /* Smartphones */
 @media(max-width: 500px) {
@@ -53,7 +60,7 @@
   }
   .feature-section {
     width: 100%;
-    min-width: 400px;
+    min-width: 500px;
     padding: 10px;
     margin-left: 100px;
     flex-direction: column;

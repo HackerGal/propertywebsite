@@ -157,6 +157,7 @@ span {
 }
 
 #navbar ul {
+  
   display: flex;
   list-style: none;
   align-items: center;
@@ -181,8 +182,8 @@ span {
   display: none;
 }
 
-#navbar ul li:hover {
-  cursor:pointer;
+#navbar ul li ul li:hover {
+  cursor: pointer;
   color: white;
   background:var(--primary-color);
 }
@@ -627,4 +628,12 @@ contact h3 {
   background-color: #fff;
   padding: 10px;
   /* flex: 50px; */
+} */
+
+/* Set the size of the div element that contains the map */
+/* #map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 } */

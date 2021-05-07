@@ -1,14 +1,17 @@
 // Initialize and add the map
 function initMap() {
-  // Your location
-  const loc = { lat: 42.361145, lng: -71.057083 };
-  // Centered map on location
-  const map = new google.maps.Map(document.querySelector('.map'), {
-    zoom: 14,
-    center: loc
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
   });
-  // The marker, positioned at location
-  const marker = new google.maps.Marker({ position: loc, map: map });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
 }
 
 // Sticky menu background
