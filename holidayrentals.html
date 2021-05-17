@@ -37,7 +37,8 @@
     </nav>
 
     </section>
-    <script src="" async defer></script>
+    <!-- <div id="map"></div> -->
+
     <section >
       <h2 class="m-heading text-center py-1">Holiday Rentals</h2>
       <h3 class="text-center py-1">Langebaan</h3>
@@ -149,12 +150,13 @@
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
           </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.3643937102847!2d18.0461797147495!3d-33.04687218429802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c335629fb87d06b%3A0xfa57f840b39bb9b2!2s16%20Serifos%20St%2C%20Skiathos%2C%20Langebaan%2C%207357!5e0!3m2!1sen!2sza!4v1620329970121!5m2!1sen!2sza" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
       <div class="feature-section" id="flex-item-right">
         <div class="p-2 py-1"  >
           <h3 >Features</h3>
-          <p><i class="far fa-money-bill-alt"></i><span > Price: Seasonal fee, From R1900p/night</span></p>
+          <p><i class="far fa-money-bill-alt"></i><span > Price: Seasonal fee, From R1900 p/night</span></p>
           <div>
             <li><i class="fas fa-bed"></i> Bedrooms: 4, 8 sleeper</li>
           </div>
@@ -177,7 +179,14 @@
               A booking deposit is required and a refundable breakage fee, after inspection.</<p>
           </div>
         </div>
+        
       </div>
+
+          <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+          <!-- <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxGMQGov3Mi56okNVwl1R5jMINZD30-2Y&callback=initMap&libraries=&v=weekly"
+          async
+        ></script> -->
   </body>
   <!-- Footer -->
   <footer id="main-footer" class="bg-dark text-center py-1">
@@ -187,13 +196,26 @@
       <a href="#" class="fab fa-instagram fa-2x"></a>
       <a href="#" class="fab fa-github fa-2x"></a> -->
     </div>
+      <!-- Async script executes immediately and must be after any DOM elements used in callback.
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxGMQGov3Mi56okNVwl1R5jMINZD30-2Y&callback=initMap&libraries=&v=weekly"
+  async
+></script> -->
   </footer>
   <!-- JQuery CDN -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-
+  <!-- <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxGMQGov3Mi56okNVwl1R5jMINZD30-2Y&callback=initMap&libraries=&v=weekly"
+  async
+></script> -->
   <!-- Local JS File -->
   <script src="js/main.js"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxGMQGov3Mi56okNVwl1R5jMINZD30-2Y&callback=initMap&libraries=&v=weekly"
+  async
+></script>
 </html>
