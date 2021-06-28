@@ -70,8 +70,20 @@ span {
 
 .m-heading {
   font-size: 2rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0px 0.75rem;
+  text-align: center;
   line-height: 1.1;
+  /* border-bottom:2px solid var(--secondary-color); */
+  /* width: 20rem; */
+  /* display: flex;
+  justify-content: center; */ 
+  /* font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem ;
+  padding: var(--secondary-color);
+  text-align: center;
+  font-weight: 100;
+  margin-block-end: 0.83em; */
 }
 
 .lead {
@@ -401,23 +413,37 @@ span {
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
+  /* cursor: pointer;
   position: absolute;
   top: 40%;
   width: 1px;
-  padding: 10px;
-  margin-top: -90px;
+  padding: 15px;
+  padding-left: 2px;
+  margin-top: 10px;
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 25px;*/
+  cursor: pointer;
+  position: absolute;
+  top:40%;
+  width: auto;
+  /* margin-top: 1.25rem; */
+  margin-top: -20px;
+  /* padding: 1px; */
+  /* padding-left: 2px; */
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left:10px;
+  /* margin-right: 15px; */
   border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
+  -webkit-user-select: none; 
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right:0;
   border-radius: 3px 0 0 3px;
 }
 .prev {
@@ -428,7 +454,7 @@ span {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: coral;
+  background-color: var(--secondary-color);
 }
 
 /* Number text (1/3 etc) */
@@ -472,6 +498,7 @@ span {
 
 /* HOLIDAY RENTAL PAGE */
 .feature-section {
+  /* background-color:rgb(192, 247, 65); */
   list-style-type: none;
   border:solid  #f0efef 2px;
   border-radius: 5px;
@@ -479,13 +506,28 @@ span {
   margin: 10px;
   box-shadow: 8px 0px 5px #f0efef;
   /* display: block; */
-  margin-left: 100px;
+  margin-left: 70px;
   /* margin-right: auto; */
-  /* margin: 10px;
-  padding: 5px; */
   width: 50%;
 }
+.feature-section-2{
+  list-style-type: none;
+  display: flex;
+  
+  /* direction: inherit; */
+  align-self:right;
+  align-items: center;
+  border:solid  #f0efef 1px;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 1px;
+  /* display: block; */
+  /* box-shadow: 8px 0px 5px #f0efef; */
+  margin-right: 70px;
+  margin-left: 70px;
+  max-width: 90%;
 
+}
 /* FOOTER */
 /* Add a hover effect if you want */
 .fab:hover {
@@ -501,7 +543,7 @@ span {
 }
 /* Section: Contact */
 .contact-section {
-	max-width: 400px;
+	max-width: 500px;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -627,13 +669,13 @@ contact h3 {
 /* #flex-item-right {
   background-color: #fff;
   padding: 10px;
-  /* flex: 50px; */
+  /* flex: 50px; 
 } */
 
 /* Set the size of the div element that contains the map */
 /* #map {
   height: 400px;
   /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+  /* width: 100%; */
+  /* The width is the width of the web page
 } */
