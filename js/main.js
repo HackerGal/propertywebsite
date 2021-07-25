@@ -1,14 +1,17 @@
 // Initialize and add the map
 function initMap() {
-  // Your location
-  const loc = { lat: 42.361145, lng: -71.057083 };
-  // Centered map on location
-  const map = new google.maps.Map(document.querySelector('.map'), {
-    zoom: 14,
-    center: loc
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
   });
-  // The marker, positioned at location
-  const marker = new google.maps.Marker({ position: loc, map: map });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
 }
 
 // Sticky menu background
@@ -77,3 +80,11 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
   document.body.style.backgroundColor = "white";
 }
+// Facebook icon
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));

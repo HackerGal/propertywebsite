@@ -146,6 +146,7 @@ span {
   border-bottom-style: solid;
 }
 #navbar ul {
+  
   display: flex;
   list-style: none;
   align-items: center;
@@ -166,6 +167,7 @@ span {
 /* #navbar ul li ul {
   display: none;
 }
+
 #navbar ul li ul li:hover {
   cursor: pointer;
   color: white;
@@ -557,6 +559,7 @@ span {
 .feature-section-2{
   list-style-type: none;
   display: flex;
+  
   /* direction: inherit; */
   align-self:right;
   align-items: center;
@@ -699,6 +702,7 @@ contact h3 {
   padding: 10px;
   /* flex: 50px; 
 } */
+
 /* Set the size of the div element that contains the map */
 /* #map {
   height: 400px;

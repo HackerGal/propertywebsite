@@ -1,4 +1,4 @@
-/* Align icon to left */
+/* Align icon to left  */
 #what .items .item {
   display: flex;
   text-align: left;
@@ -9,4 +9,38 @@
   margin-right: 1.3rem;
   align-self: center;
   margin-bottom: 0;
+}
+
+#flex-item-left {
+  /* background-color: rgb(206, 125, 125);  */
+  /* max-width: fit-content; */
+  padding: 10px;
+  /* flex: 5px; */
+  margin: 1px;
+  /* margin-left: 1px; */
+  /* align-items: col; */
+} */
+/* #flex-item-right { */
+  /* background-color: rgb(47, 194, 214); */
+  /* max-width: fit-content;
+  padding: 5px;
+  flex: 5px;
+  margin: 1px;
+} */
+.feature-section {
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  width: 100%;
+  margin-left: 10px;
+}
+.feature-section-2 {
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  width: 100%;
+  /* margin-left: 1000000px; */
+  margin: 50px;
 }

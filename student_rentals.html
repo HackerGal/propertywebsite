@@ -21,13 +21,13 @@
     <!-- Navbar -->
     <!-- <nav id="navbar">
       <h1 class="logo">
-          J | Rentals
+          J U P | Rentals
       </h1>
-      <ul>
+      <ul class="dropdown">
         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><i class="fas fa-angle-down"></i>Rentals </i>
-          <ul>
-            <li><a href="#">Holiday Rentals</a></li>
+        <li class="dropbtn" onclick="myFunction()"><i class="fas fa-angle-down"></i>Rentals </i>
+          <ul id="myDropdown" class="dropdown-content">
+            <li><a href="holidayrentals.html">Holiday Rentals</a></li>
             <li><a href="student_rentals.html">Student Rentals</a></li>
             <li><a href="longtermrentals.html">Annual Rentals</a></li>
           </ul>
@@ -52,10 +52,17 @@
   <section>
     <h2 class="m-heading text-center py-1">Student Rentals</h2>
     <div class="bottom-line"style="margin-bottom: 2rem;"></div>
-    <h3 class="text-center py-1">Bellville-South</h3>
+    <h3 class="text-center py-1">Bellville-South <br>
+      <div class="fb-share-button" 
+      data-href="http://melzy.co.za/contact.html" 
+      data-layout="button">
+      </div></h3>
+  </section>
+
+  <section>
     <!-- Container for the image gallery-->
-    <div class="flex-contact">
-      <div class="container feature-section" id="flex-item-left">
+    <div class="flex-contact" >
+      <div class="container feature-section">
         <div class="mySlides" >
           <div class="numbertext">1 / 14</div>
           <img src="img\Bellville-South\student1.jpeg" style="width:100%">
@@ -190,9 +197,10 @@
           <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </fieldset>
       </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.1710695298657!2d18.63358728551739!3d-33.91099648333273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc50646bf6800d%3A0x5c44d6513c1d1af3!2s5%20De%20Wet%20St%2C%20Bellville%20Lot%205%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1620329476243!5m2!1sen!2sza" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
-    <div class="feature-section" id="flex-item-right">
+    <div class="feature-section-2" id="flex-item-right">
       <div class="p-2 py-1"  >
         <h3 >Features</h3>
         <p><i class="far fa-money-bill-alt"></i><span > Price: From R3200 p/month sharing</span></p>
@@ -212,7 +220,8 @@
           <li><i class="fas fa-parking"></i> Parking: +-2 cars</li>
         </div><br>
         <div>
-          <p> This student accomodation is located close to UWC and and CPUT. It is fully furnished and has Wi-Fi available.</p>
+          <p> This student accomodation is conveniently located close to UWC and CPUT. It has 8 bedrooms, 4 bathrooms, 2 kitchens and
+            parking available for approximately 2 cars. It is fully furnished and has Wi-Fi available.</p>
         </div>
         <!-- <div>
           <li>Bedrooms: 1</li>
@@ -226,10 +235,9 @@
   <!-- Footer -->
   <footer id="main-footer" class="bg-dark text-center py-1">
     <div class="container">
-      <p>Copyright &copy; 2020, Melanie Molifie, All Rights Reserved</p>
+      <p>Copyright &copy; 2020, JUP, All Rights Reserved</p>
       <!-- <a href="#" class="fab fa-facebook fa-2x"></a>
-      <a href="#" class="fab fa-instagram fa-2x"></a>
-      <a href="#" class="fab fa-github fa-2x"></a> -->
+      <a href="#" class="fab fa-instagram fa-2x"></a> -->
     </div>
   </footer>
   <!-- JQuery CDN -->
