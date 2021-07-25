@@ -14,15 +14,15 @@ function initMap() {
 // Sticky menu background
 window.addEventListener('scroll', function() {
   if (window.scrollY > 150) {
-    document.querySelector('#navbar').style.opacity = 0.9;
+    document.querySelector('#mySidenav').style.opacity = 0.9;
   } else {
-    document.querySelector('#navbar').style.opacity = 1;
+    document.querySelector('#mySidenav').style.opacity = 1;
   }
 });
 
 
 // Smooth Scrolling
-$('#navbar a').on('click', function(event) {
+$('#mySidenav a').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 
@@ -64,4 +64,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
+}
+// Side Navigation
+function openNav() {
+  document.getElementById("mySidenav").style.width = "400px";
+  document.getElementById("main").style.marginLeft = "400px";
+  document.body.style.backgroundColor = "rgba(0, 0, 0, 0)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
 }

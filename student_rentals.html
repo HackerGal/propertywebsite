@@ -19,7 +19,7 @@
 </head>
   <body id="home">
     <!-- Navbar -->
-    <nav id="navbar">
+    <!-- <nav id="navbar">
       <h1 class="logo">
           J | Rentals
       </h1>
@@ -34,12 +34,24 @@
         </li>
         <li><a href="contact_page.html">Contact</a>
       </ul>
-    </nav>
+    </nav> -->
+  <!-- Sidebar navigation -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="holidayrentals.html">Holiday Rentals</a>
+    <a href="student_rentals.html">Student Rentals</a>
+    <a href="longtermrentals.html">Long-Term Rentals</a>
+    <a href="contact_page.html">Contact</a>
+  </div>
+  
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;JUP Rentals</span>
+  </div>
 
-  </section>
-    <script src="" async defer></script>
   <section>
     <h2 class="m-heading text-center py-1">Student Rentals</h2>
+    <div class="bottom-line"style="margin-bottom: 2rem;"></div>
     <h3 class="text-center py-1">Bellville-South</h3>
     <!-- Container for the image gallery-->
     <div class="flex-contact">

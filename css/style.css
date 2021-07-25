@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
   box-sizing: border-box;
+  transition: background-color .3s;
   margin:0;
   padding: 0;
   /* Contact section */
@@ -14,29 +16,24 @@
 	/* font-smoothing:antialiased;
 	text-rendering:optimizeLegibility; */
 }
-
 :root {
   --title-color: white;
   --primary-color: #626464;
   --secondary-color: coral;
 }
-
 body {
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Quicksand', sans-serif; */
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
 }
-
 a {
   text-decoration: none;
   color: var(--primary-color);
 }
-
 p {
   margin: 0.75rem 0;
 }
-
 span {
   font-weight: bold;
   color: var(--secondary-color);
@@ -53,22 +50,18 @@ span {
   overflow: hidden; */
   /* box-shadow: 10px 10px 5px grey; */
 }
-
 .text-primary {
   color: #fff;
 }
-
 .text-center {
   text-align: center;
 }
-
 .l-heading {
-  font-family: Special_elite;
-  font-size: 4rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 6rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
-
 .m-heading {
   font-size: 2rem;
   margin-bottom: 0px 0.75rem;
@@ -86,32 +79,28 @@ span {
   font-weight: 100;
   margin-block-end: 0.83em; */
 }
-
 .lead {
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
+  color: var(--primary-color);
+  background-color: var(--title-color);
 }
-
 .bg-light {
   background: white;
   color: rgb(80, 79, 79);
 }
-
 .bg-dark {
   background: var(--primary-color);
-  color: white;
+  color: var(--title-color);
 }
-
 .bg-primary {
   background: coral;
   color: #fff;
 }
-
 .btn:hover {
   background: var(--secondary-color);
   color: white;
 }
-
 .btn-dark {
   background: #333;
   color: #fff;
@@ -119,44 +108,32 @@ span {
 /* .btn-light {
   background: #fff;
   color: #333;
-
 } */
-
 .py-1 {
   padding: 1rem 0; }
-
 .py-2 {
   padding: 2rem 0; }
-
 .py-3 {
   padding: 3rem 0; }
-
 .py-4 {
   padding: 4rem 0; }
-
 .my-1 {
   margin: 1rem 0; }
-
 .my-2 {
   margin: 2rem 0; }
-
 .my-3 {
   margin: 3rem 0; }
-
 .my-4 {
   margin: 4rem 0; }
-
-  .bottom-line {
-    height: 2px;
-    width: 3rem;
-    background: var(--primary-color);
-    display: block;
-    margin: 0 auto 1rem auto; }
-
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 0 auto 1rem auto; }
 .p-2 { padding: 2rem; }
-
 /* Navigation Bar */
-#navbar {
+/* #navbar {
   display: flex;
   background: var(--primary-color);
   color: rgb(255, 255, 255);
@@ -168,45 +145,37 @@ span {
   border: coral;
   border-bottom-style: solid;
 }
-
 #navbar ul {
-  
   display: flex;
   list-style: none;
   align-items: center;
 }
-
 #navbar ul li {
   color: #e7e7e7;
   display: inline-block;
   padding: 1rem;
   position: relative;
 }
-
 #navbar ul li a {
   color: #e7e7e7;
   text-decoration: none;
   padding: 0.75rem;
   margin: 0 0.25rem;
-}
-
+} */
 /* Hide nested ul by default */
-#navbar ul li ul {
+/* #navbar ul li ul {
   display: none;
 }
-
 #navbar ul li ul li:hover {
   cursor: pointer;
   color: white;
   background:var(--primary-color);
 }
-
  #navbar ul li:hover a {
   color:#fff;
-}
-
+} */
 /* Nested dropdown show */
-#navbar ul li:hover ul {
+/* #navbar ul li:hover ul {
   display: block;
   position: absolute;
   left: 0;
@@ -214,39 +183,64 @@ span {
   margin-top: 1rem;
   background: #fff;
 }
-
 #navbar ul li:hover ul li {
   display: block;
   background: #fff;
 }
-
 #navbar ul li:hover ul li a {
   color: #888787;
-  /* color: #476b6b; */
+  /* color: #476b6b; 
+} */
+/* Responsive top navigation */
+.sidenav {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: var(--title-color);
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+  padding-top: 60px;
 }
-
-#navbar ul li:hover ul li a:hover {
-  color: #fff;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: var(--title-color);
 }
-
-#navbar ul li:hover ul li:hover {
-  background: var(--secondary-color);
-  color: #fff;
+.sidenav a:hover {
+  /* color: #f1f1f1; */
+  color: var(--title-color);
+  background-color:var(--primary-color);
 }
-
-#navbar li ul{
-  display: none;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-
+.sidenav .closebtn:hover {
+  background-color: var(--secondary-color);
+}
+#main {
+  transition: margin-left .3s;
+  padding: 16px;
+}
 /* Showcase */
 #showcase {
   background:  url('../img/pexels-oliver-sjöström-1122413.jpg') no-repeat center center/cover;
+  /* background:  url('../img/pexels-luis-martinez-4078617.jpg') no-repeat center center/cover; */
   height: 100vh;
-  color: #888787;
+  color: var(--primary-color);
   /* border: coral;
   border-bottom-style: solid; */
 }
-
 #showcase .showcase-content {
   display: flex;
   flex-direction: column;
@@ -263,29 +257,34 @@ span {
   bottom: 0;
   /* background-color: rgba(0,0,0,0.4); */
 }
-
 #what {
   /* background:  url('../img/pexels-oliver-sjöström-1122413.jpg') no-repeat center center/cover; */
   margin: 1rem;
   padding: 1rem;
-  border: solid 1px rgb(204, 201, 201);
-  border-radius: 20px;
-  box-shadow: 8px 5px 5px rgb(204, 201, 201);
-} 
-
+  /* border: solid 1px rgb(204, 201, 201); */
+  /* border-radius: 20px; */
+  /* border-radius: 0.5rem; */
+  /* box-shadow: 8px 5px 5px rgb(204, 201, 201); */
+  /* box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);}  */
 /* Section: What We Do */
+}
 #what .items {
   display: flex;
   padding: 1rem;
+  justify-content: space-between;
 }
-
 #what .items .item {
   flex: 1;
   text-align: center;
   flex-direction: column;
   padding: 1rem;
+  border-radius: 0.5rem;
+  /* box-shadow: 8px 5px 5px rgb(204, 201, 201); */
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  height: 400px;
+  width: 400px;
+  margin: 2rem;
 }
-
 #what .items .item i {
   /* background: #ffffff; */
   /* padding: 2rem;
@@ -294,7 +293,6 @@ span {
 /*  I want to add a border line??*/
   margin-bottom: 1rem;
 }
-
 .button {
   background-color: var(--secondary-color);
   border: none;
@@ -303,18 +301,77 @@ span {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   border-radius: 12px;
   transition: 0.3s;
   transition-duration: 0.4s;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
 }
-
 .button:hover {
   background-color:rgb(255, 255, 255);
   color: var(--primary-color);
   opacity: 1;
+}
+/* Card Feature */
+#card-items {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.5s;
+}
+#card-items .card {
+  --card-gradient: rgba(0, 0, 0, 0.8);
+  /* --card-gradient: #5e9ad9, var(--primary-color); */
+  --card-blend-mode: overlay;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  background-image: linear-gradient(var(--card-gradient), white max((9.5rem, 27vh)));
+  overflow: hidden;
+}
+#card-items img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  transition: width 0.5s height 0.5s;
+  object-fit: cover;
+  max-height: max(1rem, 30vh);
+  aspect-ratio: 6/3;
+  mix-blend-mode: var(--card-blend-mode);
+}
+#card-items > :last-child {
+  margin-bottom: 0;
+}
+#card-items .card:hover, #card-items .card:focus-within {
+  --card-gradient: var(--secondary-color) max(8.5rem, 20vh);
+  width: 105%;
+  height: 105%;
+
+}
+#card-items .card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+#card-items .card a {
+  color: inherit;
+}
+#card-items .card-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  grid-gap: 4rem;
+  max-width: 100vw;
+  width: 200ch;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
 }
 /* Feature */
 /* #feature .flex-photos{
@@ -323,7 +380,6 @@ span {
   flex-direction: row;
   align-items: center;
 }
-
 #feature img{
   width: 100%;
 }
@@ -383,7 +439,6 @@ span {
   text-decoration: none;
   cursor: pointer;
 } */
-
 /* Login Page display */
 .modal-header, h4, .close{
   background-color: var(--primary-color);
@@ -400,17 +455,14 @@ span {
   position: relative;
   padding: 1px;
 }
-
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -441,7 +493,6 @@ span {
   user-select: none;
   -webkit-user-select: none; 
 }
-
 /* Position the "next button" to the right */
 .next {
   right:0;
@@ -451,13 +502,11 @@ span {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: var(--secondary-color);
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -466,7 +515,6 @@ span {
   position: absolute;
   top: 0;
 }
-
 /* Container for image text */
 .caption-container {
   text-align: center;
@@ -474,29 +522,24 @@ span {
   padding: 2px 16px;
   color: white;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Five columns side by side */
 .column {
   float: left;
   width: 20%;
 }
-
 /* Add a transparency effect for thumbnail images */
 .demo {
   opacity: 0.6;
 }
-
 .active,
 .demo:hover {
   opacity: 1;
 }
-
 /* HOLIDAY RENTAL PAGE */
 .feature-section {
   /* background-color:rgb(192, 247, 65); */
@@ -514,7 +557,6 @@ span {
 .feature-section-2{
   list-style-type: none;
   display: flex;
-  
   /* direction: inherit; */
   align-self:right;
   align-items: center;
@@ -527,14 +569,12 @@ span {
   margin-right: 70px;
   margin-left: 70px;
   max-width: 90%;
-
 }
 /* FOOTER */
 /* Add a hover effect if you want */
 .fab:hover {
   opacity: 0.7;
 }
-
 /* Set a specific color for each brand */
 
 /* Facebook */
@@ -551,7 +591,6 @@ span {
   /* border: solid 1px grey; */
   border-radius: 2px;
 }
-
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] 
 { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
  #contact {
@@ -559,20 +598,17 @@ span {
   padding: 25px;
   margin: 10px 0;
 }
-
 contact h3 {
   color: #f96;
   display: block;
   font-size: 30px;
   font-weight: 400;
 }
-
 #contact h4 {
 	margin: 5px 0 15px;
 	display: block;
 	font-size: 15px;
 }
-
 .contact-section fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
@@ -580,7 +616,6 @@ contact h3 {
 	padding: 0;
 	width: 100%;
 }
-
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width: 100%;
 	border: 1px solid #CCC;
@@ -588,20 +623,17 @@ contact h3 {
 	margin: 0 0 6px;
 	padding: 10px;
 }
-
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
 	border:1px solid #AAA;
 }
-
 #contact textarea {
 	height: 100px;
 	max-width: 100%;
   resize: none;
 }
-
 #contact button[type="submit"] {
 	cursor:pointer;
 	width:100%;
@@ -612,14 +644,12 @@ contact h3 {
 	padding:10px;
 	font-size:15px;
 }
-
 #contact button[type="submit"]:hover {
 	background:rgb(155, 124, 113);
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
-
 #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 #contact input:focus, #contact textarea:focus {
@@ -642,15 +672,12 @@ contact h3 {
 #contact-section .map, #contact-section {
   flex: 1;
 }
-
 #contact .contact-form .form-group {
   margin: 0.75rem;
 }
-
 #contact .contact-form fieldset {
   display: block;
 }
-
 #contact .contact-form input,
 #contact .contact-form textarea {
   width: 100%;
@@ -672,7 +699,6 @@ contact h3 {
   padding: 10px;
   /* flex: 50px; 
 } */
-
 /* Set the size of the div element that contains the map */
 /* #map {
   height: 400px;
