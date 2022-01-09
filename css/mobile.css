@@ -3,7 +3,12 @@
   padding: 1rem;
   flex-direction: column;
 }
-
+.caption-container {
+  text-align: center;
+  background-color: rgb(75, 238, 69);
+  padding: 2px 8px;
+  color: rgb(20, 23, 187);
+}
 /* Align icon to left */
 #what .items .item {
   /* display: flex; */
@@ -20,6 +25,7 @@
 
 /* Smartphones */
 @media(max-width: 500px) {
+
   /* #navbar {
 
     text-align: center;
@@ -38,11 +44,11 @@
     top: 150px;
     /* height: 100%; */
   }
-  .flex-contact {
+  /* .flex-contact {
     flex-direction: column;
     padding: 10px;
 
-  }
+  } */
   .feature-section {
     padding: 1px;
     display: flex;
